@@ -1,0 +1,25 @@
+@import "./mixin";
+@import "./icon";
+.fade-enter-active, .fade-leave-active {
+    opacity: 1;
+    transition: .3s linear;
+}
+.fade-enter, .fade-leave-active {
+    opacity: 0;
+    transition: .3s linear;
+}
+.move-enter-active, .move-leave-active {
+	transform: translateX(0);
+	transition : .3s;
+}
+.move-enter, .move-leave-active {
+	transform: translateX(100%);
+	transition : .3s;
+}
+.scroll-wrap{
+        position: absolute;
+        top: 170px;
+        bottom: 48px;
+        width: 100%;
+        overflow: hidden;
+}
